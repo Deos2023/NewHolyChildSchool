@@ -27,7 +27,7 @@ const Navbar = () => {
                 <nav className="bg-white shadow flex items-center justify-between px-6 py-3 relative">
                     {/* Logo */}
                     <div className="flex items-center space-x-2">
-                        <img src={logo} alt="Logo" className="h-12 w-12" />
+                        <img src={logo} onClick={()=>navigate("/")} alt="Logo" className="h-12 w-12" />
                     </div>
 
                     {/* Links */}
