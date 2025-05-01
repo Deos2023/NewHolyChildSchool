@@ -2,11 +2,15 @@ import React, { useState } from 'react'
 import logo from "../assets/logo.png"
 import { MdOutlineMenu } from "react-icons/md";
 import { IoCloseSharp } from "react-icons/io5";
-import {useNavigate} from "react-router-dom"
+import {useLocation, useNavigate} from "react-router-dom"
+
 
 const Navbar = () => {
+    
     const navigate =useNavigate()
+    const location = useLocation();
     const [pop, setPop] = useState(false)
+    const isActive = (path) => location.pathname === path;
     return (
         <>
             <header className="w-full">
@@ -33,14 +37,18 @@ const Navbar = () => {
                     {/* Links */}
                     <div className='hidden sm:block'>
                         <ul className="flex space-x-6 font-semibold text-black text-sm ">
-                            <li className="text-red-600" onClick={()=>navigate("/")}>HOME</li>
+                            <li className={`cursor-pointer ${
+                isActive('/') ? 'text-red-600' : 'text-black hover:text-red-500'
+              }`} onClick={()=>navigate("/")}>HOME</li>
                             <li className="hover:text-red-500 cursor-pointer">ABOUT US▾
                                 
                             </li>
                             {/* <li className="hover:text-red-500 cursor-pointer">COMMUNITY▾</li> */}
                             {/* <li className="hover:text-red-500 cursor-pointer">STUDENT DEVELOPMENT▾</li> */}
                             <li className="hover:text-red-500 cursor-pointer">ADMISSIONS▾</li>
-                            <li className="hover:text-red-500 cursor-pointer" onClick={()=>navigate("/academics")}>ACADEMICS▾</li>
+                            <li className={`cursor-pointer ${
+                isActive('/academics') ? 'text-red-600' : 'text-black hover:text-red-500'
+              }`} onClick={()=>navigate("/academics")}>ACADEMICS▾</li>
                             <li className="hover:text-red-500 cursor-pointer">CONTACT US▾</li>
                         </ul>
                     </div>

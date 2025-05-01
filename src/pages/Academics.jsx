@@ -1,6 +1,9 @@
 import React from 'react';
-import { CalendarIcon, BookOpenIcon, AcademicCapIcon, ChartBarIcon } from '@heroicons/react/outline';
+// import { CalendarIcon, BookOpenIcon, AcademicCapIcon, ChartBarIcon } from '@heroicons/react/outline';
 import { SlCalender } from "react-icons/sl";
+import { FiBookOpen } from "react-icons/fi";
+import { HiOutlineAcademicCap } from "react-icons/hi2";
+import { FaChartBar } from "react-icons/fa";
 const Academics = () => {
   // Exam schedule data from pg13
   const examSchedule = [
@@ -33,7 +36,7 @@ const Academics = () => {
       {/* Curriculum Structure */}
       <section className="mb-16">
         <div className="flex items-center mb-8">
-          <AcademicCapIcon className="h-8 w-8 text-blue-700 mr-3" />
+          <HiOutlineAcademicCap className="h-8 w-8 text-blue-700 mr-3" />
           <h2 className="text-2xl font-serif text-blue-900">Curriculum Framework</h2>
         </div>
         
@@ -61,7 +64,7 @@ const Academics = () => {
       {/* Exam Schedule */}
       <section className="mb-16 bg-blue-50 p-8 rounded-xl">
         <div className="flex items-center mb-8">
-          <CalendarIcon className="h-8 w-8 text-blue-700 mr-3" />
+          <SlCalender className="h-8 w-8 text-blue-700 mr-3" />
           <h2 className="text-2xl font-serif text-blue-900">Examination Schedule</h2>
         </div>
         
@@ -93,7 +96,7 @@ const Academics = () => {
       {/* Grading System */}
       <section className="mb-16">
         <div className="flex items-center mb-8">
-          <ChartBarIcon className="h-8 w-8 text-blue-700 mr-3" />
+          <FaChartBar className="h-8 w-8 text-blue-700 mr-3" />
           <h2 className="text-2xl font-serif text-blue-900">Grading System</h2>
         </div>
         
@@ -111,7 +114,7 @@ const Academics = () => {
       {/* School Timings */}
       <section className="bg-amber-50 p-8 rounded-xl">
         <div className="flex items-center mb-8">
-          <BookOpenIcon className="h-8 w-8 text-amber-700 mr-3" />
+          <FiBookOpen className="h-8 w-8 text-amber-700 mr-3" />
           <h2 className="text-2xl font-serif text-amber-900">School Timings</h2>
         </div>
         

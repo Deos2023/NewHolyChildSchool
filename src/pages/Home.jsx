@@ -66,14 +66,10 @@ const Home = () => {
       {/* Quick Links Grid */}
       <div className="grid md:grid-cols-4 gap-6 mb-16">
         {[
-          { icon: "📚", title: "Academics", desc: "Playgroup to Class XII" },
+          { icon: "📚", title: "Academics", desc: "Playgroup and high quality education" },
           { icon: "🏆", title: "Achievements", desc: "Sports & Arts" },
-          {
-            icon: "💃",
-            title: "SU-SWARNA Academy",
-            desc: "Dance, Karate, Arts",
-          },
-          { icon: "👨‍🏫", title: "M.M. Tutorial", desc: "Board & College Prep" },
+         
+          { icon: "👨‍🏫", title: "Tutorial", desc: "Tutoring amazment" },
         ].map((item, idx) => (
           <div
             key={idx}
