@@ -51,7 +51,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-transparent z-10"></div>
 
         {/* Content overlay - centered text */}
-        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center">
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center font-serif">
           <h2 className="text-white text-3xl sm:text-5xl font-bold mb-6 px-4">
             "Let There Be Light on Earth"
           </h2>
@@ -100,7 +100,7 @@ const Home = () => {
               className="min-w-[250px] md:min-w-0 flex-shrink-0 bg-[#FFEDCE] p-6 shadow-xl text-center hover:shadow-lg transition "
             >
               <span className="text-4xl mb-3 block">{item.icon}</span>
-              <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+              <h3 className="text-xl font-serif mb-2">{item.title}</h3>
               <p className="text-gray-600">{item.desc}</p>
             </div>
           ))}
