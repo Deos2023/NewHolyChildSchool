@@ -48,7 +48,7 @@ const Home = () => {
       {/* Hero Banner with Slider */}
       <div className="relative w-full h-[700px] mb-12">
         {/* Black overlay with fade effect */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/100 via-black/50 to-transparent z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-transparent z-10"></div>
 
         {/* Content overlay - centered text */}
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center">

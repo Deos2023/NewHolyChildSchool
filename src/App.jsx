@@ -5,6 +5,7 @@ import Navbar from './component/Navbar';
 import Footer from './component/Footer';
 import Academics from './pages/Academics';
 import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
     <Route path="/" element={<Home />} />
     <Route path="/academics" element={<Academics />} />
     <Route path="/aboutus" element={<AboutUs />} />
+    <Route path="/contactus" element={<ContactUs />} />
     
     </Routes>
     <Footer />
