@@ -84,7 +84,9 @@ const Navbar = () => {
                                     navigate("/academics")
                                     setPop(!pop)
                                 }}>ACADEMICS</div>
-                                <div className="hover:text-red-500 cursor-pointer">CONTACT US▾</div>
+                                <div className={`cursor-pointer ${
+                                    isActive('/contactus') ? 'text-red-600' : ' hover:text-red-500'
+                                }`} onClick={()=>navigate("/contactus")}>CONTACT US▾</div>
                             </div>
                         </div>
                     </div>
