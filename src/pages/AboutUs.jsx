@@ -1,5 +1,6 @@
 import React from 'react';
 import bannerImage from "../assets/school.jpeg"
+import ach from "../assets/ach.jpeg"
 
 const AboutUs = () => {
   return (
@@ -109,6 +110,7 @@ const AboutUs = () => {
       {/* Student Achievements */}
       <section className="mb-12">
         <h2 className="text-3xl  text-blue-700 mb-6 border-b-2 border-blue-200 pb-2 font-serif">Student Achievements</h2>
+        <div className='flex sm:flex-row flex-col justify-between'>
         <div className="space-y-4">
           <ul className="list-disc pl-5 space-y-2">
             <li>100% pass rate in Board Examinations (X & XII) with higher first division</li>
@@ -129,6 +131,10 @@ const AboutUs = () => {
             <li>Champions in ARCHERY at District, State, and National levels</li>
             <li>Champions in BADMINTON at State, National, and International levels</li>
           </ul>
+        </div>
+        <div className="space-y-4">
+          <img src={ach} className='w-3/5' alt="" />
+        </div>
         </div>
       </section>
 

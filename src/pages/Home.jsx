@@ -8,17 +8,17 @@ import b1 from "../assets/img1.jpeg";
 import b2 from "../assets/img2.jpeg";
 import b3 from "../assets/img3.jpeg";
 import founder from "../assets/pg12.jpg";
-import bannerImg from "../assets/img4.jpeg"
-import student1 from "../assets/img1.jpeg"
-import student2 from "../assets/img2.jpeg"
-import student3 from "../assets/img3.jpeg"
-import student4 from "../assets/img4.jpeg"
-import football from "../assets/foot1.jpeg"
-import karate from "../assets/karate2.jpeg"
-import drawing from "../assets/drawing2.jpeg"
+import bannerImg from "../assets/img4.jpeg";
+import student1 from "../assets/img1.jpeg";
+import student2 from "../assets/img2.jpeg";
+import student3 from "../assets/img3.jpeg";
+import student4 from "../assets/img4.jpeg";
+import football from "../assets/foot1.jpeg";
+import karate from "../assets/karate2.jpeg";
+import drawing from "../assets/drawing2.jpeg";
 
 const Home = () => {
-  const slides = [b1, b2 ,b3];
+  const slides = [b1, b2, b3];
   const achievements = [
     {
       image: football,
@@ -40,14 +40,18 @@ const Home = () => {
     { src: student1, alt: "Student participating in karate class" },
     { src: student2, alt: "Students in science lab" },
     { src: student3, alt: "Cultural program performance" },
-    { src: student4, alt: "Football team celebration" }
+    { src: student4, alt: "Football team celebration" },
   ];
 
   return (
-    <div className=" mx-auto px-4">
+    <div className=" mx-auto ">
       {/* Hero Banner with Slider */}
-      <div className="relative w-full h-[500px] mb-12">
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center bg-opacity-40">
+      <div className="relative w-full h-[700px] mb-12">
+        {/* Black overlay with fade effect */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/100 via-black/50 to-transparent z-10"></div>
+
+        {/* Content overlay - centered text */}
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center">
           <h2 className="text-white text-3xl sm:text-5xl font-bold mb-6 px-4">
             "Let There Be Light on Earth"
           </h2>
@@ -59,6 +63,7 @@ const Home = () => {
           </button>
         </div>
 
+        {/* Swiper slider */}
         <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 4000 }}
@@ -79,55 +84,60 @@ const Home = () => {
 
       {/* Quick Links Grid */}
       <div className="mb-16">
-  <div className="flex md:grid md:grid-cols-4 gap-6 overflow-x-auto no-scrollbar px-2 md:px-0">
-    {[
-      { icon: "📚", title: "Academics", desc: "Playgroup and high quality education" },
-      { icon: "🏆", title: "Achievements", desc: "Sports & Arts" },
-      { icon: "👨‍🏫", title: "Tutorial", desc: "Tutoring amazement" },
-      { icon: "👨‍🏫", title: "Tutorial", desc: "Tutoring amazement" },
-    ].map((item, idx) => (
-      <div
-        key={idx}
-        className="min-w-[250px] md:min-w-0 flex-shrink-0 bg-[#FFEDCE] p-6 shadow-xl text-center hover:shadow-lg transition "
-      >
-        <span className="text-4xl mb-3 block">{item.icon}</span>
-        <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-        <p className="text-gray-600">{item.desc}</p>
+        <div className="flex md:grid md:grid-cols-4 gap-6 overflow-x-auto no-scrollbar px-2 md:px-0">
+          {[
+            {
+              icon: "📚",
+              title: "Academics",
+              desc: "Playgroup and high quality education",
+            },
+            { icon: "🏆", title: "Achievements", desc: "Sports & Arts" },
+            { icon: "👨‍🏫", title: "Tutorial", desc: "Tutoring amazement" },
+            { icon: "👨‍🏫", title: "Tutorial", desc: "Tutoring amazement" },
+          ].map((item, idx) => (
+            <div
+              key={idx}
+              className="min-w-[250px] md:min-w-0 flex-shrink-0 bg-[#FFEDCE] p-6 shadow-xl text-center hover:shadow-lg transition "
+            >
+              <span className="text-4xl mb-3 block">{item.icon}</span>
+              <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+              <p className="text-gray-600">{item.desc}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    ))}
+
+      {/* Greeting Section */}
+      <div
+  className="relative h-[90vh] w-full bg-cover bg-center"
+  style={{ backgroundImage: `url(${bannerImg})` }}
+>
+  {/* 🔴 Red transparent overlay */}
+  <div className="absolute inset-0 bg-gradient-to-t bg-red-500/70 to-transparent z-10"></div>
+
+  {/* Text content */}
+  <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
+    <h1 className="text-4xl sm:text-5xl font-bold mb-4">Welcome to</h1>
+    <h2 className="text-5xl sm:text-6xl font-extrabold text-yellow-300 mb-8">
+      The New Holy Child School
+    </h2>
+    <p className="max-w-3xl text-lg sm:text-xl leading-relaxed">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
+      maiores voluptates dolorem iure alias. Aspernatur voluptatem facere
+      repellat neque reprehenderit!
+    </p>
   </div>
 </div>
-    
-         {/* Greeting Section */}
-         <div
-      className="relative h-[90vh] w-full bg-cover bg-center"
-      style={{ backgroundImage: `url(${bannerImg})` }}
-    >
-      {/* Red blur overlay */}
-      <div className="absolute inset-0  bg-opacity-10 backdrop-blur-sm"></div>
 
-      {/* Text content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-4">Welcome to</h1>
-        <h2 className="text-5xl sm:text-6xl font-extrabold text-yellow-300 mb-8">
-          The New Holy Child School
-        </h2>
-        <p className="max-w-3xl text-lg sm:text-xl leading-relaxed">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae maiores voluptates dolorem iure alias. Aspernatur voluptatem facere repellat neque reprehenderit!
-        </p>
-      </div>
-    </div>
 
       {/* About Us Section */}
       <div className="bg-blue-50 p-8 md:p-12 rounded-xl shadow-sm mb-16">
-        
         <div className="md:flex flex-col md:flex-row gap-8 items-start">
-       
           {/* Text Content (Left Side - Wider) */}
           <div className="md:w-2/3 pb-10">
-          <h2 className="text-3xl font-serif text-blue-900 mb-6">
-          About The New Holy Child School
-        </h2>
+            <h2 className="text-3xl font-serif text-blue-900 mb-6">
+              About The New Holy Child School
+            </h2>
             <p className="text-gray-700 mb-6">
               Founded on <strong>16th April 2008</strong> by{" "}
               <strong>Mrs. Manimala Majumdar</strong>, our school is a temple of
@@ -166,31 +176,35 @@ const Home = () => {
       </div>
 
       {/* Key Achievements */}
-      
-<div className="mb-16 sm:mx-20">
-  <h2 className="text-3xl font-serif text-center mb-8">Our Achievements</h2>
-  <div className="grid md:grid-cols-3 gap-6">
-    {achievements.map((item, idx) => (
-      <div
-        key={idx}
-        className="relative group h-64  overflow-hidden shadow-lg"
-      >
-        {/* Background image */}
-        <img
-          src={item.image}
-          alt={item.title}
-          className="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
-        />
 
-        {/* Overlay on hover */}
-        <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-70 transition duration-500 flex flex-col justify-center items-center text-white px-4">
-          <h3 className="text-xl font-bold mb-2 text-center">{item.title}</h3>
-          <p className="text-sm text-center">{item.detail}</p>
+      <div className="mb-16 sm:mx-20">
+        <h2 className="text-3xl font-serif text-center mb-8">
+          Our Achievements
+        </h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          {achievements.map((item, idx) => (
+            <div
+              key={idx}
+              className="relative group h-64  overflow-hidden shadow-lg"
+            >
+              {/* Background image */}
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+              />
+
+              {/* Overlay on hover */}
+              <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-70 transition duration-500 flex flex-col justify-center items-center text-white px-4">
+                <h3 className="text-xl font-bold mb-2 text-center">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-center">{item.detail}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    ))}
-  </div>
-</div>
       {/* Notification Card */}
       <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl shadow-sm mb-16">
         <div className="flex items-center gap-3 mb-4">
@@ -297,55 +311,58 @@ const Home = () => {
         </div>
       </div>
       <div>
-      <section className="py-12 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-serif text-center text-blue-900 mb-8">
-          Student Life at NHCS
-        </h2>
-        
-        {/* Desktop: Grid layout */}
-        <div className="hidden md:grid grid-cols-4 gap-4">
-          {studentImages.map((image, index) => (
-            <div key={index} className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-              <img 
-                src={image.src} 
-                alt={image.alt}
-                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          ))}
-        </div>
+        <section className="py-12 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4">
+            <h2 className="text-3xl font-serif text-center text-blue-900 mb-8">
+              Student Life at NHCS
+            </h2>
 
-        {/* Mobile: Swiper slider */}
-        <div className="md:hidden">
-          <Swiper
-            slidesPerView={2}
-            spaceBetween={20}
-            pagination={{ clickable: true }}
-            modules={[Pagination, Autoplay]}
-            autoplay={{ delay: 3000 }}
-            className="student-gallery"
-          >
-            {studentImages.map((image, index) => (
-              <SwiperSlide key={index}>
-                <div className="rounded-lg overflow-hidden shadow-md">
-                  <img 
-                    src={image.src} 
+            {/* Desktop: Grid layout */}
+            <div className="hidden md:grid grid-cols-4 gap-4">
+              {studentImages.map((image, index) => (
+                <div
+                  key={index}
+                  className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition"
+                >
+                  <img
+                    src={image.src}
                     alt={image.alt}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+              ))}
+            </div>
 
-        {/* Optional caption */}
-        <p className="text-center mt-6 text-gray-600">
-          Moments from classrooms, sports, and cultural activities 
-        </p>
-      </div>
-    </section>
+            {/* Mobile: Swiper slider */}
+            <div className="md:hidden">
+              <Swiper
+                slidesPerView={2}
+                spaceBetween={20}
+                pagination={{ clickable: true }}
+                modules={[Pagination, Autoplay]}
+                autoplay={{ delay: 3000 }}
+                className="student-gallery"
+              >
+                {studentImages.map((image, index) => (
+                  <SwiperSlide key={index}>
+                    <div className="rounded-lg overflow-hidden shadow-md">
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-48 object-cover"
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+
+            {/* Optional caption */}
+            <p className="text-center mt-6 text-gray-600">
+              Moments from classrooms, sports, and cultural activities
+            </p>
+          </div>
+        </section>
       </div>
     </div>
   );
