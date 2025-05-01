@@ -3,13 +3,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
-import b1 from "../assets/b1.webp";
-import b2 from "../assets/b2.webp";
+import b1 from "../assets/img1.jpeg";
+import b2 from "../assets/img2.jpeg";
+import b3 from "../assets/img3.jpeg";
 import founder from "../assets/pg12.jpg";
-import bannerImg from "../assets/b1.webp"
+import bannerImg from "../assets/img4.jpeg"
 
 const Home = () => {
-  const slides = [b1, b2];
+  const slides = [b1, b2 ,b3];
   const achievements = [
     {
       icon: "🏅",
