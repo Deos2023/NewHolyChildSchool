@@ -97,12 +97,10 @@ const Home = () => {
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">Welcome to</h1>
         <h2 className="text-5xl sm:text-6xl font-extrabold text-yellow-300 mb-8">
-          The Shri Ram Schools
+          The New Holy Child School
         </h2>
         <p className="max-w-3xl text-lg sm:text-xl leading-relaxed">
-          Namaste! Discover a world of learning opportunities at The Shri Ram Schools (TSRS),
-          located in the heart of the Delhi-NCR region. TSRS is a vibrant community of learners
-          that fosters academic excellence, personal growth and cultural awareness.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae maiores voluptates dolorem iure alias. Aspernatur voluptatem facere repellat neque reprehenderit!
         </p>
       </div>
     </div>

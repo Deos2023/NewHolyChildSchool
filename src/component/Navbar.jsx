@@ -33,7 +33,7 @@ const Navbar = () => {
                     {/* Links */}
                     <div className='hidden sm:block'>
                         <ul className="flex space-x-6 font-semibold text-black text-sm ">
-                            <li className="text-red-600">HOME</li>
+                            <li className="text-red-600" onClick={()=>navigate("/")}>HOME</li>
                             <li className="hover:text-red-500 cursor-pointer">ABOUT US▾
                                 
                             </li>
