@@ -65,7 +65,7 @@ const Academics = () => {
                 <h3 className="text-xl font-semibold mb-4 text-blue-800 border-b-2 border-blue-200 pb-2">Playgroup to Class XII</h3>
                 <ul className="space-y-4">
                   {[
-                    {icon: "✓", text: "CBSE/ISC affiliated curriculum "}, 
+                    {icon: "✓", text: "ICSE / ISC / NIOS affiliated curriculum "}, 
                     {icon: "✓", text: "Digital classrooms with audio-visual aids "},
                     {icon: "✓", text: "Four main examinations annually "},
                     {icon: "✓", text: "Project-based learning integrated with academics "}

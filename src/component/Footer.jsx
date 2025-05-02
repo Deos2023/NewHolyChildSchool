@@ -1,7 +1,9 @@
 import React from 'react'
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaLinkedinIn } from "react-icons/fa";
+import { useLocation, useNavigate } from "react-router-dom"
 
 const Footer = () => {
+  const navigate = useNavigate()
   return (
     <>
        <footer className="bg-gray-100 text-gray-800 pt-10 border-t border-gray-300">
@@ -40,11 +42,11 @@ const Footer = () => {
         <div>
           <h4 className="font-semibold text-lg mb-4">Contact Us</h4>
           <ul className="text-sm space-y-1">
-            <li>PAN: 1233456</li>
-            <li>GST Certificate Available</li>
-            <li>ISO 9001:2015 Certified</li>
+            <li>Mobile: 9903725536 / 923194188</li>
+            <li>Email: thenewh349@gmail.com</li>
+            
             <li><a href="#" className="text-blue-600 hover:underline">Alumni Signup</a></li>
-            <li><a href="#" className="text-blue-600 hover:underline">Contact</a></li>
+            <li><a onClick={()=>navigate("/contactus")} className="text-blue-600 hover:underline">Contact</a></li>
           </ul>
         </div>
       </div>

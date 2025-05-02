@@ -190,11 +190,16 @@ const Home = () => {
                 alt="Founder"
                 className="h-full w-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/100 via-transparent to-transparent flex items-end p-6">
+              <div>
+                  <h3 className="text-white text-xl font-bold">Mr. Prasanta kr Majumdar</h3>
+                  <p className="text-yellow-300 text-sm">Ex. President & Protagonist</p>
+                </div>
                 <div>
                   <h3 className="text-white text-xl font-bold">Mrs. Manimala Majumdar</h3>
                   <p className="text-yellow-300 text-sm">Founder (2008)</p>
                 </div>
+                
               </div>
             </div>
           </div>
