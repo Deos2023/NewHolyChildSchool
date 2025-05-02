@@ -14,7 +14,7 @@ const Navbar = () => {
         <>
             <div className="fixed w-full top-0 z-50 bg-white shadow-sm">
                 {/* Top border accent */}
-                <div className="h-1 bg-gradient-to-r from-blue-800 to-yellow-500"></div>
+                <div className="h-2 bg-gradient-to-r from-blue-800 to-yellow-500"></div>
                 
                 <div className="max-w-7xl mx-auto px-4">
                     <nav className="flex items-center justify-between py-4">

@@ -12,7 +12,7 @@ import b3 from "../assets/img3.jpeg";
 import founder from "../assets/pg12.jpg";
 import bannerImg from "../assets/img4.jpeg";
 import student1 from "../assets/img1.jpeg";
-import student2 from "../assets/img2.jpeg";
+import student2 from "../assets/dance.jpeg";
 import student3 from "../assets/img3.jpeg";
 import student4 from "../assets/img4.jpeg";
 import football from "../assets/foot1.jpeg";
@@ -48,10 +48,10 @@ const Home = () => {
   ];
 
   const studentImages = [
-    { src: student1, alt: "Student participating in karate class", category: "sports" },
-    { src: student2, alt: "Students in science lab", category: "academics" },
-    { src: student3, alt: "Cultural program performance", category: "cultural" },
-    { src: student4, alt: "Football team celebration", category: "sports" },
+    { src: student1, alt: "Student participate in coseplay game ", category: "sports" },
+    { src: student2, alt: "Cultural program performance", category: "academics" },
+    { src: student3, alt: "Parade merching", category: "cultural" },
+    { src: student4, alt: "Excitement for Future", category: "sports" },
   ];
 
   const events = [
