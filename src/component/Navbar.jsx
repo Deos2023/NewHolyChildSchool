@@ -28,14 +28,14 @@ const Navbar = () => {
                                 alt="Logo" 
                                 className="h-12 w-12 transition-transform group-hover:scale-105" 
                             />
-                            <span className=" sm:text-xl font-bold text-blue-900">
+                            <span className="sm:text-xl font-bold text-blue-900">
                                 The New Holy Child School
                             </span>
                         </div>
 
                         {/* Desktop Links - Enhanced */}
                         <div className='hidden md:block'>
-                            <ul className="flex space-x-1">
+                            <ul className="flex space-x-6">
                                 {[
                                     { path: '/', name: 'HOME' },
                                     { path: '/aboutus', name: 'ABOUT US' },
@@ -43,20 +43,23 @@ const Navbar = () => {
                                     { path: '/academics', name: 'ACADEMICS' },
                                     { path: '/contactus', name: 'CONTACT US' }
                                 ].map((item, index) => (
-                                    <li key={index}>
+                                    <li key={index} className="relative group">
                                         <button
                                             onClick={() => navigate(item.path)}
-                                            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                                            className={`px-1 py-2 text-sm font-medium transition-all duration-300 ${
                                                 isActive(item.path) 
-                                                    ? 'bg-blue-700 text-white shadow-md' 
-                                                    : 'text-gray-700 hover:bg-blue-50 hover:text-blue-700'
+                                                    ? 'text-blue-600' 
+                                                    : 'text-gray-700 hover:text-blue-600'
                                             }`}
                                         >
                                             {item.name}
-                                            {!isActive(item.path) && index !== 0 && (
-                                                <span className="text-xs ml-1">▼</span>
-                                            )}
                                         </button>
+                                        {/* Animated underline */}
+                                        <div className={`absolute bottom-0 left-0 h-0.5 bg-blue-600 transition-all duration-300 ${
+                                            isActive(item.path) 
+                                                ? 'w-full' 
+                                                : 'w-0 group-hover:w-full'
+                                        }`}></div>
                                     </li>
                                 ))}
                             </ul>
