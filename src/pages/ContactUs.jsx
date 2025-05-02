@@ -1,12 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaPaperPlane } from 'react-icons/fa';
-
+const whatsappNumber = "9903725536";
 const ContactUs = () => {
+  const [form, setForm] = useState({
+    firstname: '',
+    lastname: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Format the WhatsApp message
+    const text = `New Website Enquiry:%0A%0AName: ${encodeURIComponent(form.firstname)} ${encodeURIComponent(form.lastname)}%0AEmail: ${encodeURIComponent(form.email)}%0AMessage: ${encodeURIComponent(form.message)}`;
+    // WhatsApp link
+    const waLink = `https://wa.me/91${whatsappNumber}?text=${text}`;
+    // Open WhatsApp
+    window.open(waLink, '_blank');
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">
       {/* Contact Header */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl font-serif  text-blue-900 mb-4">Get in Touch</h1>
+        <h1 className="text-4xl   text-blue-900 mb-4 font-bold">Get in Touch</h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           We'd love to hear from you! Whether you have questions about admissions, programs, or any other inquiries, 
           feel free to reach out to us. Our team is here to assist you.
@@ -16,9 +40,9 @@ const ContactUs = () => {
       <div className="grid md:grid-cols-2 gap-12">
         {/* Contact Form */}
         <div className="bg-white p-8 rounded-xl shadow-md">
-          <h2 className="text-2xl  mb-6 text-blue-800 font-serif ">REACH US THROUGH</h2>
+          <h2 className="text-2xl  mb-6 text-blue-800  ">REACH US THROUGH</h2>
           
-          <form className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             {/* Name Field */}
             <div className="grid grid-cols-2 gap-4">
               <div>
@@ -27,7 +51,9 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
-                  id="first-name"
+                  name="firstname"
+                  value={form.firstname}
+                  onChange={handleChange}
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                   required
                 />
@@ -38,7 +64,10 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
-                  id="last-name"
+                  id="lastname"
+                  name='lastname'
+                  value={form.lastname}
+                  onChange={handleChange}
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                   required
                 />
@@ -53,6 +82,9 @@ const ContactUs = () => {
               <input
                 type="email"
                 id="email"
+                name='email'
+                value={form.email}
+                onChange={handleChange}
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                 required
               />
@@ -66,6 +98,9 @@ const ContactUs = () => {
               <textarea
                 id="message"
                 rows="4"
+                name='message'
+                value={form.message}
+                onChange={handleChange}
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
               ></textarea>
             </div>
@@ -76,7 +111,7 @@ const ContactUs = () => {
               className="bg-blue-700 hover:bg-blue-800 text-white font-medium py-3 px-6 rounded-md transition flex items-center"
             >
               <FaPaperPlane className="mr-2" />
-              Submit
+              Submit Via Whatsapp
             </button>
           </form>
         </div>
@@ -85,7 +120,7 @@ const ContactUs = () => {
         <div className="space-y-8">
           {/* Contact Information */}
           <div className="bg-blue-50 p-6 rounded-xl">
-            <h3 className="text-xl font-serif  mb-4 text-blue-800">Contact Information</h3>
+            <h3 className="text-xl   mb-4 text-blue-800">Contact Information</h3>
             
             <div className="space-y-4">
               <div className="flex items-start">
@@ -93,7 +128,7 @@ const ContactUs = () => {
                 <div>
                   <p className="font-medium">Address:</p>
                   <p className="text-gray-600">
-                    Rajdanga Main Rd, Sector E, East Kolkata Twp,<br />
+                    E.C-74 Rajdanga Main Rd, Sector E, East Kolkata Twp,<br />
                     Kolkata, West Bengal 700107
                   </p>
                 </div>
@@ -103,7 +138,7 @@ const ContactUs = () => {
                 <FaPhone className="text-blue-700 mr-3 text-lg" />
                 <div>
                   <p className="font-medium">Phone:</p>
-                  <p className="text-gray-600">+91 98765 43210</p>
+                  <p className="text-gray-600">+91 9903725536 / +91 9231941881</p>
                 </div>
               </div>
               
@@ -111,7 +146,7 @@ const ContactUs = () => {
                 <FaEnvelope className="text-blue-700 mr-3 text-lg" />
                 <div>
                   <p className="font-medium">Email:</p>
-                  <p className="text-gray-600">info@newholychildschool.com</p>
+                  <p className="text-gray-600">thenewh349@gmail.com</p>
                 </div>
               </div>
             </div>

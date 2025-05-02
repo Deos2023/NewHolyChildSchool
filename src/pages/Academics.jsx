@@ -4,6 +4,7 @@ import { SlCalender } from "react-icons/sl";
 import { FiBookOpen } from "react-icons/fi";
 import { HiOutlineAcademicCap } from "react-icons/hi2";
 import { FaChartBar } from "react-icons/fa";
+import bannerImage from "../assets/sch2.jpeg";
 const Academics = () => {
   // Exam schedule data from pg13
   const examSchedule = [
@@ -21,23 +22,38 @@ const Academics = () => {
     { range: "60-69", grade: "B", label: "Satisfactory" },
     { range: "50-59", grade: "C", label: "Average" }
   ];
-
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
+    <>
+     {/* Hero Banner - Enhanced */}
+          <div className="relative w-full h-96 overflow-hidden mb-12">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-transparent z-10"></div>
+            <img
+              src={bannerImage}
+              alt="New Holy Child School Banner"
+              className="w-full h-full object-cover object-center"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent z-10 p-8 text-white">
+              <h1 className="text-4xl md:text-5xl font-bold mb-2">ACADEMICS</h1>
+              <p className="text-xl text-yellow-300 ">"True education is the complete development of a person in terms of knowledge, sensibility, and behavior."</p>
+            </div>
+          </div>
+    <div className="max-w-7xl mx-auto px-4 py-8">
+     
       {/* Header */}
-      <div className="text-center mb-16">
-        <h1 className="text-4xl font-serif text-blue-900 mb-4">Academics</h1>
+      {/* <div className="text-center mb-10">
+        <h1 className="text-4xl  text-blue-900 mb-4 font-bold">Academics</h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
           "True education is the complete development of a person in terms of knowledge, sensibility, and behavior." 
           <span className="block mt-2 text-sm">- From President's Desk (pg4)</span>
         </p>
-      </div>
+      </div> */}
 
-      {/* Curriculum Structure */}
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+        {/* Curriculum Structure */}
       <section className="mb-16">
-        <div className="flex items-center mb-8">
+        <div className="flex items-center text-center text-3xl md:text-4xl font-bold text-blue-800 mb-6 pb-4 border-b-2 border-blue-100">
           <HiOutlineAcademicCap className="h-8 w-8 text-blue-700 mr-3" />
-          <h2 className="text-2xl font-serif text-blue-900">Curriculum Framework</h2>
+          <h2 className="  text-blue-900 ">Curriculum Framework</h2>
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
@@ -62,14 +78,14 @@ const Academics = () => {
       </section>
 
       {/* Exam Schedule */}
-      <section className="mb-16 bg-blue-50 p-8 rounded-xl">
+      <section className="mb-16 bg-blue-50 p-8 ">
         <div className="flex items-center mb-8">
           <SlCalender className="h-8 w-8 text-blue-700 mr-3" />
-          <h2 className="text-2xl font-serif text-blue-900">Examination Schedule</h2>
+          <h2 className="text-2xl  text-blue-900">Examination Schedule</h2>
         </div>
         
         <div className="overflow-x-auto">
-          <table className="min-w-full bg-white rounded-lg overflow-hidden">
+          <table className="min-w-full bg-white  overflow-hidden">
             <thead className="bg-blue-900 text-white">
               <tr>
                 <th className="py-3 px-4 text-left">Examination</th>
@@ -97,12 +113,12 @@ const Academics = () => {
       <section className="mb-16">
         <div className="flex items-center mb-8">
           <FaChartBar className="h-8 w-8 text-blue-700 mr-3" />
-          <h2 className="text-2xl font-serif text-blue-900">Grading System</h2>
+          <h2 className="text-2xl  text-blue-900">Grading System</h2>
         </div>
         
         <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-4">
           {gradingSystem.map((grade, index) => (
-            <div key={index} className="bg-white p-4 rounded-lg shadow text-center border-t-4 border-blue-500">
+            <div key={index} className="bg-white p-4  shadow text-center border-t-4 border-blue-500">
               <span className="text-3xl block mb-2">{grade.grade}</span>
               <h3 className="font-bold">{grade.range}</h3>
               <p className="text-sm text-gray-600">{grade.label}</p>
@@ -112,10 +128,10 @@ const Academics = () => {
       </section>
 
       {/* School Timings */}
-      <section className="bg-amber-50 p-8 rounded-xl">
+      <section className="bg-amber-50 p-8 ">
         <div className="flex items-center mb-8">
           <FiBookOpen className="h-8 w-8 text-amber-700 mr-3" />
-          <h2 className="text-2xl font-serif text-amber-900">School Timings</h2>
+          <h2 className="text-2xl  text-amber-900">School Timings</h2>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
@@ -154,7 +170,9 @@ const Academics = () => {
           </div>
         </div>
       </section>
+      </div>
     </div>
+    </>
   );
 };
 
