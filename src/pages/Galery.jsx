@@ -7,7 +7,7 @@ const generateImages = () => {
   const images = [];
   for (let i = 1; i <= 59; i++) {
     images.push({
-      src: `src/assets/img/1 (${i}).jpeg`,
+      src: `img/1 (${i}).jpeg`,
       alt: `Image ${i}`,
       category: "general",
     });
