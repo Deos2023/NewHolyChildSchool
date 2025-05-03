@@ -6,36 +6,39 @@ import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import logo from "../assets/logo.png";
 import logo2 from "../assets/logowhite.png";
-import b1 from "../assets/img1.jpeg";
-import b2 from "../assets/img2.jpeg";
-import b3 from "../assets/img3.jpeg";
+import b1 from "../assets/img11.png";
+import b2 from "../assets/img12.png";
+import b3 from "../assets/img13.png";
+import b4 from "../assets/img1.jpeg";
+import b5 from "../assets/img7.jpeg";
+import b6 from "../assets/img8.jpeg";
 import founder from "../assets/pg12.jpg";
 import bannerImg from "../assets/img4.jpeg";
-import student1 from "../assets/img1.jpeg";
+import student1 from "../assets/ach3.png";
 import student2 from "../assets/dance.jpeg";
 import student3 from "../assets/img3.jpeg";
 import student4 from "../assets/img4.jpeg";
 import football from "../assets/foot1.jpeg";
 import karate from "../assets/karate2.jpeg";
-import drawing from "../assets/drawing2.jpeg";
+import drawing from "../assets/ach3.png";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 
 const Home = () => {
   const navigate = useNavigate();
-  const slides = [b1, b2, b3];
+  const slides = [b1, b2, b3 ,b4 ,b5 ,b6];
   
   const achievements = [
     {
       image: football,
-      title: "International Karate Champions",
+      title: " NHCS Football Cup Winners",
       detail: "3 Gold Medals (2023)",
       icon: "⚽"
     },
     {
       image: karate,
-      title: "NHCS Football Cup Winners",
+      title: "International Karate Champions",
       detail: "Senior & Junior Teams (2024)",
       icon: "🥋"
     },
@@ -190,17 +193,7 @@ const Home = () => {
                 alt="Founder"
                 className="h-full w-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/100 via-transparent to-transparent flex items-end p-6">
-              <div>
-                  <h3 className="text-white text-xl font-bold">Mr. Prasanta kr Majumdar</h3>
-                  <p className="text-yellow-300 text-sm">Ex. President & Protagonist</p>
-                </div>
-                <div>
-                  <h3 className="text-white text-xl font-bold">Mrs. Manimala Majumdar</h3>
-                  <p className="text-yellow-300 text-sm">Founder (2008)</p>
-                </div>
-                
-              </div>
+              
             </div>
           </div>
           

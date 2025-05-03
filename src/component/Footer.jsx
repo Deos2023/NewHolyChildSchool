@@ -42,7 +42,7 @@ const Footer = () => {
         <div>
           <h4 className="font-semibold text-lg mb-4">Contact Us</h4>
           <ul className="text-sm space-y-1">
-            <li>Mobile: 9903725536 / 923194188</li>
+            <li>Mobile: 9903725536 / 9231941881</li>
             <li>Email: thenewh349@gmail.com</li>
             
             <li><a href="#" className="text-blue-600 hover:underline">Alumni Signup</a></li>
