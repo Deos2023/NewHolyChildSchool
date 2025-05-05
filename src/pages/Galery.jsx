@@ -5,9 +5,9 @@ import Masonry from "react-masonry-css";
 
 const generateImages = () => {
   const images = [];
-  for (let i = 1; i <= 59; i++) {
+  for (let i = 1; i <= 90; i++) {
     images.push({
-      src: `img/1 (${i}).jpeg`,
+      src: `img/2 (${i}).jpeg`,
       alt: `Image ${i}`,
       category: "general",
     });
