@@ -466,8 +466,8 @@ const AboutUs = () => {
                 <p>
                   {" "}
                   In alignment with this mission, we have founded the{" "}
-                  <span className="font-semibold">M.M. CHARITABLE GROUP</span>
-                  a collective of nearly 35 generous members from India and
+                  <span className="font-semibold">M.M. CHARITABLE GROUP. </span>
+                   A collective of nearly 35 generous members from India and
                   overseas. This group contributes selflessly toward the
                   sponsorship for raw food materials, educational resources like
                   books and notebooks, clothing, blankets, mosquito nets, and

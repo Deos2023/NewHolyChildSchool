@@ -42,17 +42,19 @@ const Footer = () => {
         <div>
           <h4 className="font-semibold text-lg mb-4">Contact Us</h4>
           <ul className="text-sm space-y-1">
+            <li>Address: E.C-74 Rajdanga Main Rd, Sector E, East Kolkata Twp,<br />
+            Kolkata, West Bengal 700107 </li>
             <li>Mobile: 9903725536 / 9231941881</li>
             <li>Email: thenewh349@gmail.com</li>
             
-            <li><a href="#" className="text-blue-600 hover:underline">Alumni Signup</a></li>
+           
             <li><a onClick={()=>navigate("/contactus")} className="text-blue-600 hover:underline">Contact</a></li>
           </ul>
         </div>
       </div>
 
       <div className="mt-10 border-t border-gray-300 text-center py-4 text-sm text-gray-600">
-        &copy; {new Date().getFullYear()} New Holy Child School. All rights reserved.
+      &copy; Copyright © {new Date().getFullYear()}. All Rights Reserved. Website Developed & Maintained by Digital Exposure Online Services
       </div>
     </footer>
     </>
