@@ -7,17 +7,17 @@ import { motion } from "framer-motion";
 import { useMediaQuery } from 'react-responsive';
 import logo from "../assets/logo.png";
 import logo2 from "../assets/logowhite.png";
-import b1 from "../assets/img11.png";
-import b2 from "../assets/img12.png";
-import b3 from "../assets/img14.png";
-import b4 from "../assets/img1.jpeg";
-import b5 from "../assets/img7.jpeg";
-import b6 from "../assets/img8.jpeg";
+import b1 from "../assets/img11.webp";
+import b2 from "../assets/img12.webp";
+import b3 from "../assets/img14.webp";
+import b4 from "../assets/img1.webp";
+import b5 from "../assets/img7.webp";
+import b6 from "../assets/img8.webp";
 
-import a1 from "../assets/imcr11.png";
-import a2 from "../assets/imcr12.png";
-import a3 from "../assets/imcr3.jpeg";
-import a4 from "../assets/imcr15.jpeg";
+import a1 from "../assets/imcr11.webp";
+import a2 from "../assets/imcr12.webp";
+import a3 from "../assets/imcr3.webp";
+import a4 from "../assets/imcr15.webp";
 
 import founder from "../assets/pg12.jpg";
 import bannerImg from "../assets/img4.jpeg";
@@ -27,7 +27,7 @@ import student3 from "../assets/img3.jpeg";
 import student4 from "../assets/img4.jpeg";
 import football from "../assets/foot1.jpeg";
 import karate from "../assets/karate2.jpeg";
-import drawing from "../assets/ach3.png";
+import drawing from "../assets/drw.webp";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
@@ -42,7 +42,7 @@ const Home = () => {
     {
       image: football,
       title: " NHCS Football Cup Winners",
-      detail: "3 Gold Medals (2023)",
+      detail: "Footbal Tournament winners",
       icon: "⚽",
     },
     {
@@ -112,7 +112,7 @@ const Home = () => {
                 The New Holy Child School
               </h1>
               <p className=" font-semibold text-gray-200 max-w-3xl mx-auto">
-                ICSE , ISE / NIOS , (CURRICULAM)
+                ICSE , ISC / NIOS , (CURRICULAM)
               </p>
               <div className="w-24 h-1 bg-yellow-400 mx-auto my-6"></div>
              
@@ -212,7 +212,7 @@ const Home = () => {
                     •
                   </span>
                   <span>
-                    First list announcement: <strong>24th March 2025</strong>
+                    First list announcement: <strong>24th March 2026</strong>
                   </span>
                 </li>
               </ul>
