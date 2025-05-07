@@ -53,7 +53,7 @@ const Home = () => {
     },
     {
       image: drawing,
-      title: "All Bengal Drawing Competition",
+      title: "All Bengal sit & Drawing Competition",
       detail: "1st, 2nd & 3rd Positions",
       icon: "🎨",
     },
