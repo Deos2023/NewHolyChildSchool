@@ -23,7 +23,7 @@ export function FloatingButtons() {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/919903725536"
+        href="https://wa.me/916290007363"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors"
@@ -34,7 +34,7 @@ export function FloatingButtons() {
 
       {/* Call Button */}
       <a
-        href="tel:9903725536"
+        href="tel:6290007363"
         className="bg-teal-700 text-white p-4 rounded-full shadow-lg hover:bg-teal-800 transition-colors"
         aria-label="Call us"
       >

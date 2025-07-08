@@ -44,7 +44,7 @@ const Footer = () => {
           <ul className="text-sm space-y-1">
             <li>Address: E.C-74 Rajdanga Main Rd, Sector E, East Kolkata Twp,<br />
             Kolkata, West Bengal 700107 </li>
-            <li>Mobile: 9903725536 / 9231941881 / 6290007363 </li>
+            <li>Mobile: 9231941881 / 6290007363 </li>
             <li>Email: thenewh349@gmail.com</li>
             
            

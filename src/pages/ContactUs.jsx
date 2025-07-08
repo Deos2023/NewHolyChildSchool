@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaPaperPlane } from 'react-icons/fa';
-const whatsappNumber = "9903725536";
+const whatsappNumber = "6290007363";
 const ContactUs = () => {
   const [form, setForm] = useState({
     firstname: '',
@@ -138,7 +138,7 @@ const ContactUs = () => {
                 <FaPhone className="text-blue-700 mr-3 text-lg" />
                 <div>
                   <p className="font-medium">Phone:</p>
-                  <p className="text-gray-600">+91 9903725536 / +91 9231941881 / +91 6290007363</p>
+                  <p className="text-gray-600"> +91 9231941881 / +91 6290007363</p>
                 </div>
               </div>
               
