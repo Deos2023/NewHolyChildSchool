@@ -7,6 +7,7 @@ import Academics from './pages/Academics';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import Gallery from './pages/Galery';
+import { FloatingButtons } from './component/Floating';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
     <Route path="/gallery" element={<Gallery />} />
     
     </Routes>
+    <FloatingButtons />
     <Footer />
    
    
